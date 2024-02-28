@@ -33,7 +33,7 @@ const data = {
 function Features() {
   return (
     <div>
-      <div className="md:text-center text-green-500 text-[40px] font-semibold font-['Inria Sans'] mt-12">
+      <div className="md:text-center text-green-500 text-[40px] font-semibold mt-12">
         Excellent features we Deliver
       </div>
       <div className="flex flex-col items-center justify-center gap-8">
