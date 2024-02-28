@@ -9,7 +9,7 @@ function Hero() {
       <div className="flex flex-col md:py-4 md:my-4">
         <h2 className="text-black text-[40px] md:text-left font-semibold font-['Inria Sans']">
           We are your go to Agricultural{" "}
-          <span className="text-green-500 text-[40px] font-light font-['Inria Sans']">
+          <span className="text-green-500 text-[40px] font-['Inria Sans']">
             Companions.
           </span>
         </h2>
