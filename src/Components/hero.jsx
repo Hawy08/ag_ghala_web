@@ -7,7 +7,7 @@ function Hero() {
     <div className='flex items-center justify-center'>
     <div className="md:flex md:w-2/3">
       <div className="flex flex-col md:py-4 md:my-4">
-        <h2 className="text-black text-[40px] md:text-left font-light font-['Inria Sans']">
+        <h2 className="text-black text-[40px] md:text-left font-semibold font-['Inria Sans']">
           We are your go to Agricultural{" "}
           <span className="text-green-500 text-[40px] font-light font-['Inria Sans']">
             Companions.

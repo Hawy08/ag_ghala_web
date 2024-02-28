@@ -19,23 +19,23 @@ const testimonialData = [
 function Testimonials() {
   return (
     <div className="md:flex justify-center">
-    <div className="md:flex my-12 flex-col md:w-2/3">
-      <div className="flex justify-center">
-        <h1 className="text-green-500 md:text-6xl text-4xl font-light font-['Inria Sans'] leading-[72px]">
-          Testimonials
-        </h1>
+      <div className="md:flex my-12 flex-col md:w-2/3">
+        <div className="flex justify-center">
+          <h1 className="text-green-500 md:text-6xl text-xl font-light font-['Inria Sans'] leading-[72px]">
+            Testimonials
+          </h1>
+        </div>
+        <div className="md:flex ">
+          {testimonialData.map((data, index) => (
+            <Testimonialcard
+              key={index}
+              testimony={data.testimony}
+              name={data.name}
+              company={data.company}
+            />
+          ))}
+        </div>
       </div>
-      <div className="md:flex ">
-        {testimonialData.map((data, index) => (
-          <Testimonialcard
-            key={index}
-            testimony={data.testimony}
-            name={data.name}
-            company={data.company}
-          />
-        ))}
-      </div>
-    </div>
     </div>
   );
 }
