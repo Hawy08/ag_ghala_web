@@ -1,7 +1,8 @@
 import Card from "../Semicomponents/card";
-import feat1 from "../assets/Frame (3).png";
-import feat2 from "../assets/Vector (5).png";
-import feat3 from "../assets/Group 6.png";
+import feat1 from "../assets/ALP-2_1-scaled-2000x733.jpg";
+import feat2 from "../assets/axi-12284732.jpg";
+import feat3 from "../assets/bg-1.jpg";
+import feat4 from "../assets/Blog2-3.jpg";
 
 const data = {
   properties: [
@@ -9,18 +10,22 @@ const data = {
       image: feat1,
       product: "Ghalas",
       description:
-        "We connect farmers to storage facilities in their locality.",
+        "Secure storage for your harvest. Local facilities. Zero losses.",
     },
     {
       image: feat2,
       product: "Sokos",
-      description: "Sell your products at market friendly prices.",
+      description: "Agripreneurs, rejoice! Fair prices. Happy pockets.",
     },
     {
       image: feat3,
       product: "Blogs",
-      description:
-        "Get to know what is trending in the agricultural market around you",
+      description: "Stay informed. Trends, tips, and ag-tech updates.",
+    },
+    {
+      image: feat4,
+      product: "AgriTech",
+      description: "Tech-powered farming. Precision meets success.",
     },
   ],
 };
@@ -28,10 +33,10 @@ const data = {
 function Features() {
   return (
     <div>
-      <div className="text-center text-green-500 text-[40px] font-light font-['Inria Sans'] mt-12">
+      <div className="md:text-center text-green-500 text-[40px] font-semibold font-['Inria Sans'] mt-12">
         Excellent features we Deliver
       </div>
-      <div className="md:flex gap-8">
+      <div className="flex flex-col items-center justify-center gap-8">
         {data.properties.map((feature, index) => (
           <Card
             key={index}

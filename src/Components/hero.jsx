@@ -4,8 +4,9 @@ import banner from '../assets/smartmockups_lrlucjc5-removebg-preview.png'
 
 function Hero() {
   return (
-    <div className="md:flex">
-      <div className="  flex flex-col py-4 my-4">
+    <div className='flex items-center justify-center'>
+    <div className="md:flex md:w-2/3">
+      <div className="flex flex-col md:py-4 md:my-4">
         <h2 className="text-black text-[40px] md:text-left font-light font-['Inria Sans']">
           We are your go to Agricultural{" "}
           <span className="text-green-500 text-[40px] font-light font-['Inria Sans']">
@@ -17,7 +18,7 @@ function Hero() {
           you with the knowledge you need to make sure you benefit as a farmer.
         </p>
         <div className="my-4 py-4 flex justify-center md:justify-start">
-          <img src={download} />
+          {/* <img src={download} /> */}
         </div>
       </div>
       <div className="">
@@ -26,6 +27,7 @@ function Hero() {
           className="w-full h-full object-cover hidden md:flex"
         />
       </div>
+    </div>
     </div>
   );
 }

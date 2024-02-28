@@ -6,21 +6,23 @@ import Application from "../assets/app.apk";
 
 function Footer() {
   return (
-    <div>
+    <div className="flex justify-center">
+
+    <div className="md:w-2/3">
       <div className="md:flex border-t-4 border-black p-4 font-['Inria Sans']">
         <div className="text-left font-['Inria Sans'] font-light">
-          <p className="text-green-500 text-2xl font-bold">Join us</p>
-          <p className="grow shrink basis-0 text-neutral-900 text-lg  font-light">
+          <p className="text-2xl font-bold text-green-500">Join us</p>
+          <p className="text-lg font-light grow shrink basis-0 text-neutral-900">
             Join AgroGhala today to champion for a hunger free Africa.
           </p>
         </div>
-        <div className="md:flex justify-center items-center flex-col text-left w-full my-4 md:my-0">
+        <div className="flex-col items-center justify-center w-full my-4 text-left md:flex md:my-0">
           <p className="text-neutral-900 text-2xl font-bold font-['Inter']">
-            Get in Touch
+            Get in touch
           </p>
           <div>
             <ul className="text-left w-full my-2 font-['Inria Sans'] font-light">
-              <li className="p-2">
+              <li className="p-2" href="#">
                 <img
                   src={arrow}
                   width={8}
@@ -60,7 +62,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t-2 border-black p-4 md:flex justify-between">
+      <div className="justify-between p-4 border-t-2 border-black md:flex">
         <img
           src={logo}
           alt="agroghala"
@@ -80,6 +82,7 @@ function Footer() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
