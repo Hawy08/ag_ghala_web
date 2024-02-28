@@ -21,7 +21,7 @@ function Testimonials() {
     <div className="md:flex justify-center">
     <div className="md:flex my-12 flex-col md:w-2/3">
       <div className="flex justify-center">
-        <h1 className="text-green-500 text-6xl font-light font-['Inria Sans'] leading-[72px]">
+        <h1 className="text-green-500 md:text-6xl text-4xl font-light font-['Inria Sans'] leading-[72px]">
           Testimonials
         </h1>
       </div>
