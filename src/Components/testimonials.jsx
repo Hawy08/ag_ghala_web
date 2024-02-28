@@ -19,7 +19,7 @@ const testimonialData = [
 function Testimonials() {
   return (
     <div className="md:flex justify-center">
-      <div className="md:flex my-12 flex-col md:w-2/3">
+      <div className="md:flex my-12 flex-col md:w-4/5">
         <div className="flex justify-center">
           <h1 className="text-green-500  text-[40px] font-semibold">
             Testimonials

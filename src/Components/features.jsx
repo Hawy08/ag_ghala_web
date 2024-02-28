@@ -10,12 +10,12 @@ const data = {
       image: feat1,
       product: "Ghalas",
       description:
-        "Secure storage for your harvest. Local facilities. Zero losses.",
+        "Linking you to affordable and quality Storage facilities in your locality.",
     },
     {
       image: feat2,
       product: "Sokos",
-      description: "Agripreneurs, rejoice! Fair prices. Happy pockets.",
+      description: "Be in the know on the current market trends and prices",
     },
     {
       image: feat3,
@@ -25,7 +25,7 @@ const data = {
     {
       image: feat4,
       product: "AgriTech",
-      description: "Tech-powered farming. Precision meets success.",
+      description: "Technology powered farming.",
     },
   ],
 };
@@ -36,13 +36,14 @@ function Features() {
       <div className="md:text-center text-green-500 text-[40px] font-semibold mt-12">
         Excellent features we Deliver
       </div>
-      <div className="flex flex-col items-center justify-center gap-8">
+      <div className="flex flex-col items-center justify-center">
         {data.properties.map((feature, index) => (
           <Card
             key={index}
             image={feature.image}
             product={feature.product}
             description={feature.description}
+            imagePosition={index % 2 === 0 ? "left" : "right"}
           />
         ))}
       </div>

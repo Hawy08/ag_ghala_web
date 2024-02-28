@@ -6,7 +6,7 @@ import banner from '../assets/smartmockups_lrlucjc5-removebg-preview.png'
 function Hero() {
   return (
     <div className="flex items-center justify-center bg-red-40">
-      <div className="md:flex md:w-2/3">
+      <div className="md:flex md:w-4/5">
         <div className="flex flex-col md:py-4 md:my-4">
           <h2 className="text-black text-[40px] md:text-left font-semibold font-['Inria Sans'] my-8 py-6">
             We are your go to Agricultural{" "}
@@ -20,7 +20,7 @@ function Hero() {
             a farmer.
           </p>
           <div className="my-4 py-4 flex justify-center md:justify-start">
-            <div className=" px-6 py-1 bg-green-500 rounded-[22px] justify-center items-center  md:inline-flex">
+            <div className=" p-4 bg-green-500 rounded-md  justify-center items-center  md:inline-flex">
               <div className="text-white text-base font-bold font-['Inter']">
                 <a
                   href={Application}
