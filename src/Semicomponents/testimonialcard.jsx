@@ -3,7 +3,7 @@ import quatation from "../assets/speech.png";
 
 function Testimonialcard(props) {
   return (
-    <div className="md:w-1/2 p-4 m-4 bg-white">
+    <div className="p-4 m-4 bg-white md:w-1/2">
       <div>
         <div>
           <img src={quatation} />
@@ -13,7 +13,7 @@ function Testimonialcard(props) {
         </p>
       </div>
       <div className="text-left">
-        <h2>{props.name}</h2>
+        <h2 className="font-semibold">{props.name}</h2>
         <p>{props.company}</p>
       </div>
     </div>
