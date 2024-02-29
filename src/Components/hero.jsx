@@ -1,12 +1,12 @@
 // import React from 'react'
 // import download from '../assets/Google Play.png'
 import Application from "../assets/app.apk";
-import banner from '../assets/smartmockups_lrlucjc5-removebg-preview.png'
+import banner from '../assets/smart-agriculture.webp'
 
 function Hero() {
   return (
-    <div className="flex items-center justify-center bg-red-40">
-      <div className="md:flex md:w-4/5">
+    <div className="flex items-center justify-center">
+      <div className=" md:flex md:w-4/5">
         <div className="flex flex-col md:py-4 md:my-4">
           <h2 className="text-black text-[40px] md:text-left font-semibold font-['Inria Sans'] my-8 py-6">
             We are your go to Agricultural{" "}
@@ -19,8 +19,8 @@ function Hero() {
             provides you with the knowledge you need to make sure you benefit as
             a farmer.
           </p>
-          <div className="my-4 py-4 flex justify-center md:justify-start">
-            <div className=" p-4 bg-green-500 rounded-md  justify-center items-center  md:inline-flex">
+          <div className="flex justify-center py-4 my-4 md:justify-start">
+            <div className="items-center justify-center p-4 bg-green-500 rounded-md md:inline-flex">
               <div className="text-white text-base font-bold font-['Inter']">
                 <a
                   href={Application}
@@ -35,11 +35,21 @@ function Hero() {
             {/* <img src={download} /> */}
           </div>
         </div>
-        <div className="">
-          <img
-            src={banner}
-            className="w-full h-full object-cover hidden md:flex"
-          />
+        <div className="flex items-center justify-center ">
+          <div className="absolute overflow-hidden bg-gray-400 rounded-md bottom-2 h-1/3">
+            {" "}
+            <img
+              src={banner}
+              className="hidden object-cover w-full h-full md:flex"
+            />
+          </div>
+          <div className="w-1/2 overflow-hidden bg-gray-400 rounded-md h-1/3">
+            {" "}
+            <img
+              src={banner}
+              className="hidden object-cover w-full h-full shadow-md md:flex"
+            />
+          </div>
         </div>
       </div>
     </div>
